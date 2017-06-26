@@ -188,7 +188,7 @@ class Elf
           &&  hdr->e_ident[Elf::EI_DATA]  == Elf::ELFDATA2LSB
           &&  hdr->e_type                 == Elf::ET_EXEC
           &&  (hdr->e_machine             == Elf::EM_386 
-              || hdr->e_machine		        == Elf::EM_ARM)
+              || hdr->e_machine           == Elf::EM_ARM)
           &&  hdr->e_version              == Elf::EV_CURRENT)
       {
         return true;
